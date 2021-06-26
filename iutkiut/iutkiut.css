@@ -16,6 +16,8 @@ body{
     border-bottom: 1px solid #b0b0b0 ;
     margin: 0px;
     box-sizing: inherit;
+    display: flex;
+    justify-content: center;
 }
 
 .nav_bar{
@@ -25,13 +27,13 @@ body{
     display: flex;
     justify-content: space-between;
     font-family: "S-CoreDream-3Light";
-    min-width: 1000px;
+    width: 1000px;
 }
 
 .logo{
     height: 45px;
     width: auto;
-    padding: 20px 15px 0px;
+    padding: 20px 50px 0px 15px;
 }
 
 .nav_link:any-link, .nav_link:visited, .nav_link:active{
@@ -112,14 +114,14 @@ body{
     font-weight: bold;
     color: #df7000;
     text-decoration-line: none;
-    line-height: 40px;
+    line-height: 20px;
 }
 
 .gnb_empty_title{
     margin: 0px;
     font-weight: bold;
     color: white;
-    line-height: 40px;
+    line-height: 20px;
 }
 
 .gnb_list{
@@ -128,7 +130,7 @@ body{
 .gnb_item{
     display: block;
     font-weight: lighter;
-    line-height: 40px;
+    line-height: 20px;
 }
 
 .gnb_top_link{
@@ -158,8 +160,12 @@ body{
 
 #main{
     height: 1000px;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #fafbfc;
+}
+
+.container{
+
 }
