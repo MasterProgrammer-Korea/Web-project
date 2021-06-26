@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이웃기웃</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="iutkiut.css" />
+    <style>
+      html {
+        font-family: "S-CoreDream-3Light";
+      }
+      .name {
+          font-size: 16px;
+      }
+      .main {
+        background-color: #fafbfc;
+      }
+      .navbar {
+        height: 150px;
+        justify-content: center;
+        font-family: "S-CoreDream-3Light";
+      }
+      .container {
+        display: flex;
+        width: 1000px;
+        padding: 50px 50px;
+        justify-content: space-around;
+        font-family: "S-CoreDream-3Light";
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: 10px 10px;
+        background-color: white;
+        justify-content: center;
+      }
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .top button {
+        padding: 5px 10px;
+        background-color: #df7000;
+        border: 1px;
+        color: white;
+      }
+      article {
+        display: flex;
+        margin: 5px 10px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .comment {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        font-size: small;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin: 10px;
+      }
+      .right {
+        display: flex;
+        width: 30%;
+        margin: 10px 10px;
+        background-color: white;
+        align-items: center;
+        flex-direction: column;
+        font-size: small;
+      }
+      .right h5 {
+        margin: 10px;
+        text-align: center;
+      }
+      .hot_post {
+        display: flex;
+        width: 90%;
+        padding: 10px;
+        flex-direction: row;
+      }
+      .detail {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- <div class="header">
+      <header
+        class="
+          d-flex
+          flex-wrap
+          align-items-center
+          justify-content-center justify-content-md-between
+          py-3
+          mb-4
+          border-bottom
+        "
+      >
+        <a
+          href="/"
+          class="
+            d-flex
+            align-items-center
+            col-md-3
+            mb-2 mb-md-0
+            text-dark text-decoration-none
+          "
+        >
+          <svg
+            class="bi me-2"
+            width="40"
+            height="32"
+            role="img"
+            aria-label="Bootstrap"
+          >
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button>
+          <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+      </header>
+    </div> -->
+    <!-- navbar -->
+    <!-- <div class="navbar">navigation bar 부분</div> -->
+    <div id="header">
+        <nav class="nav_bar">
+            <a href="" class="logo_area">
+                <img src="data/logo.png" class="logo" alt="logo">
+            </a>
+            <ul class="center_menu">
+                <a href="" class="cur_page_link">메인</a>
+                <div class="gnb_panel">
+                    <div class="gnb_grids">
+                        <div class="gnb_grid">
+                            <a href="" class="gnb_title">커뮤니티</a>
+                            <ul class="gnb_list">
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">아파트 커뮤니티</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">단지 커뮤니티</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">마을 커뮤니티</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">동/면/리 커뮤니티</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid gnb_border_right">  
+                            <p class="gnb_empty_title">
+                                _
+                            </p>
+                            <ul class="gnb_list">
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">동아리 커뮤니티</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">대여 커뮤니티</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">같이 할 사람</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_top_link">더 보기</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid">
+                            <a href="" class="gnb_title">배달</a>
+                            <ul class="gnb_list">
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_top_link">주문하기</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">음식 포장</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">편의점 / 약</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">심부름 / 기타</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid gnb_border_right">
+                            <p class="gnb_empty_title">
+                                _
+                            </p>
+                            <ul class="gnb_list">
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_top_link">배달하기</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">배달 희망 등록</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">주문 목록</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid">
+                            <a href="" class="gnb_title">공지사항</a>
+                            <ul class="gnb_list">
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_top_link">아파트 공지사항</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">단지 공지사항</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">마을 공지사항</a>
+                                </li>
+                                <li class="gnb_item">
+                                    <a href="" class="gnb_link">동/면/리 공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="nav_link">커뮤니티</a>
+                <a href="" class="nav_link">배달</a>
+                <a href="" class="nav_link">공지사항</a>
+            </ul>
+            <ul class="account_menu">
+                <a href="" class="nav_link">채팅</a>
+                    <a href="" class="nav_link">로그인</a>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- main 부분 -->
+    <div class="main">
+        <div class="container">
+            <div class="wrap right">
+                <div class="title">
+                    <h5>실시간 인기 글</h5>
+                    <hr width: 90%;>
+                </div>
+                <div class="hot_post">
+                <a href="#">
+                    <span><strong>1</strong></span>
+                    <span><strong>이미지가 있을 경우</strong></span>
+                    <div class="detail">
+                    <p>우리 초코 귀엽죠??</p>
+                    <span>추천 23 / 댓글 10</span>
+                    </div>
+                </a>
+                </div>
+                <div class="hot_post">
+                <a href="#">
+                    <span><strong>2</strong></span>
+                    <span><strong>테스트</strong></span>
+                    <div class="detail">
+                    <p>추천이랑 댓글은 아이콘으로 바꿀까 생각 중</p>
+                    <span>추천 8 / 댓글 3</span>
+                    </div>
+                </a>
+                </div>
+            </div>
+        <div class="wrap content">
+            <div class="top">
+                <div class="title">
+                    <p classs="name">아파트 커뮤니티</p>
+                    <span><button>글쓰기</button></span>
+                    <hr>
+                </div>
+            </div>
+            <div class="comments">
+            <article>
+                <a href="#">
+                <div class="comment">
+                    <h6><strong>이미지가 있을 경우</strong></h6>
+                    <p>우리 초코 귀엽죠??</p>
+                    <span>방금 / 연주</span>
+                    <span>추천 23 / 댓글 10</span>
+                </div>
+                </a>
+                <img src="data/choco.jpg" alt="choco" />
+            </article>
+            <article>
+                <a href="#">
+                <div class="comment">
+                    <h6><strong>이미지 없는 기본 상태</strong></h6>
+                    <span>이미지가 없을 때를 가정한 것</span>
+                    <p>5분 전 / yeonju</p>
+                    <span>추천 0 / 댓글 2</span>
+                </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                <div class="comment">
+                    <h6><strong>테스트2</strong></h6>
+                    <span>두 가지 버전 중에서 뭐로 할지 고민 중</span>
+                    <p>10분 전 / yeonju</p>
+                    <span>추천 4 / 댓글 3</span>
+                </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                <div class="comment">
+                    <h6><strong>테스트</strong></h6>
+                    <span>추천이랑 댓글은 아이콘으로 바꿀까 생각 중</span>
+                    <p>10분 전 / yeonju</p>
+                    <span>추천 8 / 댓글 3</span>
+                </div>
+                </a>
+            </article>
+            </div>
+        </div>
+
+        </div>
+    </div>
+  </body>
+</html>
