@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="orderr.css">
+    <title>배달 주문하기</title>
+  </head>
+<body class="bg-light custom-class-ex">
+      <!-- 여기부터 div 시작이라서 여기에 클래스(custom-class-ex2) 주기 -->
+    <div class="container custom-class-ex2">
+
+      <!-- header-->
+      <div id="header">
+        <nav class="nav_bar">
+            <a href="" class="logo_area">
+                <img src="https://cdn.discordapp.com/attachments/821048689295884369/855798737615061002/image0.png" class="logo" alt="logo">
+            </a>
+            <ul class="center_menu">
+                <a href="" class="cur_page_link">메인</a>
+                <div class="gnb_panel">
+                    <div class="gnb_grids">
+                        <div class="gnb_grid">
+                            <a href="" class="gnb_title">커뮤니티</a>
+                            <ul class="gnb_list">
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">아파트 커뮤니티</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">단지 커뮤니티</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">마을 커뮤니티</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">동/면/리 커뮤니티</a>
+                                </il>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid gnb_border_right">  
+                            <p class="gnb_empty_title">
+                                _
+                            </p>
+                            <ul class="gnb_list">
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">동아리 커뮤니티</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">대여 커뮤니티</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">같이 할 사람</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_top_link">더 보기</a>
+                                </il>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid">
+                            <a href="" class="gnb_title">배달</a>
+                            <ul class="gnb_list">
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_top_link">주문하기</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">음식 포장</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">편의점 / 약</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">심부름 / 기타</a>
+                                </il>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid gnb_border_right">
+                            <p class="gnb_empty_title">
+                                _
+                            </p>
+                            <ul class="gnb_list">
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_top_link">배달하기</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">배달 희망 등록</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">주문 목록</a>
+                                </il>
+                            </ul>
+                        </div>
+                        <div class="gnb_grid">
+                            <a href="" class="gnb_title">공지사항</a>
+                            <ul class="gnb_list">
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_top_link">아파트 공지사항</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">단지 공지사항</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">마을 공지사항</a>
+                                </il>
+                                <il class="gnb_item">
+                                    <a href="" class="gnb_link">동/면/리 공지사항</a>
+                                </il>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="nav_link">커뮤니티</a>
+                <a href="" class="nav_link">배달</a>
+                <a href="" class="nav_link">공지사항</a>
+            </ul>
+            <ul class="account_menu">
+                <a href="" class="nav_link">채팅</a>
+                    <a href="" class="nav_link">로그인</a>
+            </ul>
+        </nav>
+    </div><br>
+
+    
+<!--start!!-->
+    <div class="container">
+    <main>
+        <div class="address">
+        <h3>요청지 주소</h3>>
+        <label for="address">상세주소 입력<span class="add_text">(선택)</span></label>
+        <form class="address_input">
+              <input type="text" class="address_input" id="search" placeholder="주소(동/도로명/건물명)" value="" required>
+              <button id="search">동/도로명/건물명 검색</button><br>
+              <input type="text" class="address_input" id="search" placeholder="상세 주소" value="" required>
+        </form><br>
+      </div>
+
+        <div class="ask">
+        <h3>요청사항 입력</h3>
+        <form class="ask_input">
+              <textarea rows="10" cols="10" name="request" class="form-control" id="request">자세한 요청 사항을 적어주세요.</textarea>
+        </form><br>
+      </div>
+
+        <div class="photo">
+        <h3>상품 사진 업로드</h3>
+        <label for="photo">> 상품의 사진을 업로드 해주세요<span class="add_text">(선택)</span></label>
+        <form class="photo_input">
+              <input type="file" name="FileName">
+        </form><br>
+        </div>
+
+        <div class="pay">
+        <h3>결제 수단 선택</h3>
+        <form class="payment">
+              <input id="money" name="paymentMethod" type="radio" class="form-check-input" check required>
+              <label class="form-check-label" for="money">현금 결제</label><br>
+              <input id="remit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="remit">계좌이체</label><br>
+              <input id="etc" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="etc">기타</label>    
+        </form><br>
+        </div>
+
+        <div class="cost">
+        <h3>총 배달 비용</h3>
+        <label for="cost">> 배달 비용과 아래의 상품 비용을 합해서 적어주세요<span class="add_text">(필수)</span></label>
+        <form class="cost_input">
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">새우탕</h6>
+                    </div>
+                    <span class="text-muted">1500원</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">토레타(1.25L)</h6>
+                    </div>
+                    <span class="text-muted">3300원</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>상품 합계 비용</span>
+                    <strong>4800원</strong>
+                </li>
+              </ul>
+        <label for="address">> 총 합</label>
+            <input type="text" class="form-control" id="sum" placeholder="" required>
+        </form><br>
+        </div>
+
+        <div class="submit">
+        <form>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">주문하기</button><br>
+        </form>
+        </div>
+
+        <div class="back">
+          <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+          </p>
+        </div>
+      </main>
+      </div>
+</div>
+</body>
+</html>
