@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="iutkiut.css">
     <title>이웃기웃</title>
 </head>
@@ -21,54 +22,54 @@
                         <div class="gnb-grid">
                             <a href="" class="gnb-title">커뮤니티</a>
                             <ul class="gnb-list">
-                                <il class="gnb-item">
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">아파트 커뮤니티</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">단지 커뮤니티</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">마을 커뮤니티</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">동/면/리 커뮤니티</a>
-                                </il>
+                                </li>
                             </ul>
                         </div>
                         <div class="gnb-grid gnb-border-right">  
-                            <p class="gnb-empty-title">
-                                _
-                            </p>
                             <ul class="gnb-list">
-                                <il class="gnb-item">
+                                <p class="gnb-empty-title">
+                                    _
+                                </p>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">동아리 커뮤니티</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">대여 커뮤니티</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">같이 할 사람</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-top-link">더 보기</a>
-                                </il>
+                                </li>
                             </ul>
                         </div>
                         <div class="gnb-grid">
                             <a href="" class="gnb-title">배달</a>
                             <ul class="gnb-list">
-                                <il class="gnb-item">
+                                <li class="gnb-item">
                                     <a href="" class="gnb-top-link">주문하기</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">음식 포장</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">편의점 / 약</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">심부름 / 기타</a>
-                                </il>
+                                </li>
                             </ul>
                         </div>
                         <div class="gnb-grid gnb-border-right">
@@ -76,32 +77,32 @@
                                 _
                             </p>
                             <ul class="gnb-list">
-                                <il class="gnb-item">
+                                <li class="gnb-item">
                                     <a href="" class="gnb-top-link">배달하기</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">배달 희망 등록</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">주문 목록</a>
-                                </il>
+                                </li>
                             </ul>
                         </div>
                         <div class="gnb-grid">
                             <a href="" class="gnb-title">공지사항</a>
                             <ul class="gnb-list">
-                                <il class="gnb-item">
+                                <li class="gnb-item">
                                     <a href="" class="gnb-top-link">아파트 공지사항</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">단지 공지사항</a>
                                 </il>
-                                <il class="gnb-item">
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">마을 공지사항</a>
-                                </il>
-                                <il class="gnb-item">
+                                </li>
+                                <li class="gnb-item">
                                     <a href="" class="gnb-link">동/면/리 공지사항</a>
-                                </il>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -112,15 +113,34 @@
             </ul>
             <ul class="account-menu">
                 <a href="" class="nav-link">채팅</a>
-                    <a href="" class="nav-link">로그인</a>
+                <a href="" class="nav-link">로그인</a>
             </ul>
         </nav>
     </div>
 
     <!-- main -->
     <div id="main">
-        <div class="container">
-            ㅎㅇ
+        <div class="empty-panel">
+            <div class="chat-room-name"></div>
+        </div>
+        <div class="main-container">
+            <div class="community-panel">
+                <p class="main-panel-title">커뮤니티</p>
+            </div>
+            <div class="delivery-panel">
+                <p class="main-panel-title">배달</p>
+            </div>
+            <div class="notice-panel">
+                <p class="main-panel-title">공지사항</p>
+            </div>
+        </div>
+        
+        <div class="chat-panel">
+            <div class="chat-room">
+                <p class="chat-title">채팅</p>
+            </div>
+            <div class=""></div>
+
         </div>
     </div>
 </body>
