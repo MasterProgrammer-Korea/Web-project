@@ -5,9 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.name {
-  font-size: 1.6rem;
-}
 .main {
   background-color: #fafbfc;
   display: flex;
@@ -36,7 +33,7 @@
 }
 .top button {
   padding: 5px 10px;
-  margin-left: 220px;
+  margin-left: 240px;
   background-color: #df7000;
   border: 1px;
   border-radius: 4px;
@@ -64,33 +61,32 @@
 .content .category h5 {
   margin-left: 240px;
 }
+.messages {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
 article {
   display: flex;
   width: 100%;
   height: 110px;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-around;
   box-shadow: 0px 1px#ececec;
 }
 a {
   text-decoration: none;
   color: #5b5656;
-  /* color: #4a4a48; */
 }
 a:hover {
   color: #df7000;
 }
 .message {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   font-size: 1.2rem;
-}
-.content img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin: 10px;
 }
 .wrap {
   border: 1px solid #c8c8c8;
@@ -99,14 +95,11 @@ a:hover {
 }
 .left {
   display: flex;
-  width: 30%;
+  width: 300px;
   /* margin: 10px 10px; */
   background-color: white;
   align-items: center;
   flex-direction: column;
-}
-.left .detail {
-  padding-left: 13px;
 }
 h5 {
   font-size: 1.8rem;
@@ -130,6 +123,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
   box-shadow: 0px 1px#ececec;
 }
 .post {
@@ -140,16 +134,64 @@ h6 {
   font-weight: bold;
   margin-bottom: 2px;
 }
+.left .detail {
+  display: flex;
+  flex-direction: column;
+}
 .left .detail p {
   font-size: 1.2rem;
+  margin-left: 12px;
+  margin-top: 3px;
   margin-bottom: 5px;
 }
-.content .detail p {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+.left .detail .icons img {
+  margin-left: 12px;
+  display: flex;
+  align-items: flex-end;
 }
-.content .detail span {
-  font-size: 1rem;
-  display: block;
-  margin-bottom: 3px;
+.left .detail .icons p {
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+.message .detail {
+  display: flex;
+  flex-direction: column;
+}
+.message img {
+  width: 70px;
+  height: 70px;
+}
+.content a {
+  width: 100%;
+}
+.content .icons .nickname {
+  margin-right: 12px;
+  color: #df7000;
+  font-weight: bold;
+}
+.content p {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.content .icons img {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+.content .icons p {
+  margin-bottom: 0px;
+  margin-right: 12px;
+}
+.icons {
+  display: flex;
+  width: 300px;
+  height: 14px;
+  align-items: flex-end;
+  /* margin: 7px 0; */
+}
+.icons img {
+  width: 13px;
+  height: 13px;
+  object-fit: cover;
 }

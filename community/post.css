@@ -5,9 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-.name {
-  font-size: 1.6rem;
-}
 .main {
   background-color: #fafbfc;
   display: flex;
@@ -26,6 +23,7 @@
   width: 70%;
   margin-left: 10px;
   background-color: white;
+  color: #5b5656;
 }
 .top {
   display: flex;
@@ -77,7 +75,7 @@ article {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #5b5656;
 }
 a:hover {
   color: #df7000;
@@ -180,12 +178,6 @@ article .icons p {
 .comment p {
   margin: 3px 0;
 }
-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin: 1;
-}
 .wrap {
   border: 1px solid #c8c8c8;
   border-radius: 10px;
@@ -193,7 +185,7 @@ img {
 }
 .left {
   display: flex;
-  width: 30%;
+  width: 300px;
   /* margin: 10px 10px; */
   background-color: white;
   align-items: center;
@@ -201,6 +193,7 @@ img {
 }
 h5 {
   font-size: 1.8rem;
+  color: #444444;
 }
 h6 {
   font-size: 1.6rem;
@@ -236,7 +229,7 @@ h6 {
 }
 .left .detail p {
   font-size: 1.2rem;
-  margin-left: 13px;
+  margin-left: 12px;
   margin-top: 3px;
 }
 .left .detail .icons img {
