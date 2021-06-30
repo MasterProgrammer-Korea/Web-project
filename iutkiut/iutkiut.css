@@ -16,12 +16,15 @@ body {
 }
 
 #header {
+  position: fixed;
   height: 90px;
-  padding: 0px 50px 0px;
+  width: 100%;
+  background-color: white;
   border-bottom: 1px solid #d0d0d0;
   margin: 0px;
   display: flex;
   justify-content: center;
+  box-shadow: 1px 1px 1px #dddddd;
 }
 
 .nav-bar {
@@ -212,7 +215,7 @@ body {
     margin: 0px 10px;     
     display: flex;
     flex-direction: column-reverse;
-    background-color: #d0d0d0;
+    background-color: #f0f0f0;
     border-bottom: 1px solid #c8c8c8;
 }
 
@@ -240,7 +243,7 @@ body {
 }
 
 #main{
-    padding-top: 50px;
+    padding-top: 140px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -265,11 +268,10 @@ body {
     font-size: 1.8rem;
     color: #444444;
     text-decoration-line: none;
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #c8c8c8;
 }
 
 .community-panel{
-    height: 500px;
     margin-bottom: 50px;
     background-color: white;
     border: 1px solid #c8c8c8;
@@ -278,7 +280,6 @@ body {
 }
 
 .delivery-panel{
-    height: 500px;
     margin-bottom: 50px;
     background-color: white;
     border: 1px solid #c8c8c8;
@@ -295,7 +296,7 @@ body {
 }
 
 .main-notice{
-  border-bottom: 1px solid #d0d0d0;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 .main-middle-title-box{
@@ -314,6 +315,14 @@ body {
 .notice-article{
   padding: 10px 0px 10px 50px;
   border-top: 1px solid #d0d0d0;
+}
+
+.main-notice:hover .notice-articles{
+  display: block;
+}
+
+.notice-articles{
+  display: none;
 }
 
 .message-button{
