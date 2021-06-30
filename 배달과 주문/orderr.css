@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    padding: 50px 50px;
+    justify-content:space-around;
+    font-family: 'S-CoreDream-3Light';
+    background-color:#fafbfc;
+    margin: 0 auto;
+    border: 1px solid #c8c8c8;
+    border-radius : 10px;
+    box-shadow: 1px 1px 1px #dddddd;
+  }
+
+main {
+    background-color: #fafbfc;
+    justify-content: space-around;
+    width: 80%;
+    padding: auto;
+    font-family: 'S-CoreDream-3Light';
+}
+
+.img {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+    color: #5B5656;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'S-CoreDream-3Light';
+}
+
+textarea {
+    width: 790px;
+    height: 150px;
+    font-family: 'S-CoreDream-3Light';
+    color: #5B5656;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(247, 206, 132, 0.61);
+}
+
+.add_text,label {
+    font-size: 14px;
+    font-family: 'S-CoreDream-3Light';
+    color: #5B5656;
+}
+
+input {
+    font-size: 13px;
+    color: #5B5656;
+    width: 700px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(151, 149, 149);
+}
+
+form {
+    font-family: 'S-CoreDream-3Light';
+    border: 1px solid rgba(247, 206, 132, 0.61);
+    background-color: #ffffff;
+    padding: 15px;
+    width: 96%;
+    border-radius: 10px;
+}
+
+.back {
+    text-align: right;
+}
+
+
+/*button*/
+
+.btn2{
+    background:#f8bb4ab2;
+    color:#fff;
+    font-family: 'S-CoreDream-3Light';
+    border-radius: 5px;
+    width: 790px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.btn1 {
+    background:#f7f2eab2;
+    color:#5B5656;
+    font-family: 'S-CoreDream-3Light';
+    width: 200px;
+    height: 30px;
+    font-size: 13px;
+}
