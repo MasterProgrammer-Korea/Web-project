@@ -9,6 +9,7 @@
     <title>이웃기웃</title>
 </head>
 <body>
+    
     <!-- header -->
     <div id="header">
         <nav class="nav-bar">
@@ -84,7 +85,7 @@
                                     <a href="" class="gnb-link">배달 희망 등록</a>
                                 </li>
                                 <li class="gnb-item">
-                                    <a href="" class="gnb-link">주문 목록</a>
+                                    <a href="" class="gnb-link">배달 요청 목록</a>
                                 </li>
                             </ul>
                         </div>
@@ -92,7 +93,7 @@
                             <a href="" class="gnb-title">공지사항</a>
                             <ul class="gnb-list">
                                 <li class="gnb-item">
-                                    <a href="" class="gnb-top-link">아파트 공지사항</a>
+                                    <a href="" class="gnb-link">아파트 공지사항</a>
                                 </li>
                                 <li class="gnb-item">
                                     <a href="" class="gnb-link">단지 공지사항</a>
@@ -112,10 +113,28 @@
                 <a href="" class="nav-link">공지사항</a>
             </ul>
             <ul class="account-menu">
-                <a href="" class="nav-link">채팅</a>
-                <a href="" class="nav-link">로그인</a>
+                <span class="nav-link" onclick="view_chat()">채팅</span>
+                <span class="nav-link" onclick="view_login()">로그인</span>
             </ul>
         </nav>
+    </div>
+    <div id="login-background-panel"></div>
+    <div id="login-panel" >
+        <div class="login-container">
+            <div class="login-close" onclick="close_login()">
+                <p>X</p>
+            </div>
+            <div class="login-title">
+                <p>로그인</p>
+            </div>
+            <div>
+                <p class="login-info">아이디 ></p>
+                <input type="text" class="login-info-inputbox">
+                <p class="login-info">비밀번호 ></p>
+                <input type="password" class="login-info-inputbox">
+            </div>
+            <p><button type="submit" class="login-button">로그인</button></p>
+        </div>
     </div>
 
     <!-- main -->
@@ -163,7 +182,7 @@
                                 <p class="message-content">각 동의 분리수거 요일이 변경되었으니 확인해주세요!</p>
                             </div>
                             <div>
-                                <span class="detail">아파트 관리자</span>
+                                <span class="detail">롯데캐슬 관리자</span>
                                 <span class="detail">2021.06.12.</span>
                             </div>
                         </a>
@@ -300,16 +319,55 @@
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">주문하기 ></a>
                     </div>
+                    <div class="notice-articles">
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                    <p class="message">음식 포장 ></p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                    <p class="message">편의점 / 약 ></p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                    <p class="message">심부름 / 기타 ></p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
                 </div>
                 <div class="main-notice">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">배달하기 ></a>
                     </div>
+                    <div class="notice-articles">
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                    <p class="message">배달 희망 등록 ></p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                    <p class="message">배달 요청 목록 ></p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="chat-panel">
+
+        <div id="chat-panel" class="chat-panel">
             <div class="chat-room">
                 <p class="chat-title">채팅</p>
                 <div class="chat-content">
@@ -322,8 +380,9 @@
                     <span><button class="chat-button">전송</button></span>                    
                 </div>
             </div>
-
         </div>
+        
     </div>
+    <script type="text/javascript" src="home.js"></script>
 </body>
 </html>
