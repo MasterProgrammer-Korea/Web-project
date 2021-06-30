@@ -6,9 +6,12 @@
   font-style: normal;
 }
 .main {
-  background-color: #fafbfc;
+  padding-top: 90px;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: center;
+  background-color: #fafbfc;
 }
 #container {
   display: flex;
@@ -33,7 +36,7 @@
 }
 .top button {
   padding: 5px 10px;
-  margin-left: 240px;
+  margin-left: 250px;
   background-color: #df7000;
   border: 1px;
   border-radius: 4px;
@@ -102,11 +105,11 @@ a:hover {
   flex-direction: column;
 }
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #444444;
 }
 h6 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
