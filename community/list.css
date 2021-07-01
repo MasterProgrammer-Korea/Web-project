@@ -205,3 +205,29 @@ h6 {
   height: 13px;
   object-fit: cover;
 }
+#write-post {
+  display: none;
+  /* display: block; */
+  font-size: 1.2rem;
+  padding: 20px 0 20px 20px;
+  box-shadow: 0px 1px#ececec;
+  background-color: #f0f0f0;
+}
+#write-post input {
+  font-family: "S-CoreDream-3Light";
+  width: 80%;
+  margin-right: 46px;
+  border: 0px;
+  /* border: 1px solid #c8c8c8; */
+  background-color: #f0f0f0;
+}
+button {
+  padding: 5px 10px;
+  /* margin-right: 5px; */
+  background-color: #df7000;
+  border: 1px;
+  border-radius: 4px;
+  color: white;
+  font-family: "S-CoreDream-3Light";
+  box-shadow: 1px 1px 1px #ececec;
+}
