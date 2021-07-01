@@ -262,16 +262,6 @@ h6 {
   font-size: 1rem;
   display: block;
 }
-/* button {
-  padding: 5px 10px;
-  margin-left: 220px;
-  background-color: #df7000;
-  border: 1px;
-  border-radius: 4px;
-  color: white;
-  font-family: "S-CoreDream-3Light";
-  box-shadow: 1px 1px 1px #ececec;
-} */
 #write-comment {
   display: none;
   font-size: 1.2rem;
@@ -287,9 +277,9 @@ h6 {
   /* border: 1px solid #c8c8c8; */
   background-color: #f0f0f0;
 }
-button {
+#post-btn {
   padding: 5px 10px;
-  /* margin-right: 5px; */
+  margin-right: 5px;
   background-color: #df7000;
   border: 1px;
   border-radius: 4px;

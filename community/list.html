@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="iutkiut.css" />
     <link rel="stylesheet" href="list.css" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>이웃기웃</title>
   </head>
   <body>
@@ -38,8 +39,8 @@
                 </ul>
               </div>
               <div class="gnb-grid gnb-border-right">
-                <p class="gnb-empty-title">_</p>
                 <ul class="gnb-list">
+                  <p class="gnb-empty-title">_</p>
                   <li class="gnb-item">
                     <a href="" class="gnb-link">동아리 커뮤니티</a>
                   </li>
@@ -81,7 +82,7 @@
                     <a href="" class="gnb-link">배달 희망 등록</a>
                   </li>
                   <li class="gnb-item">
-                    <a href="" class="gnb-link">주문 목록</a>
+                    <a href="" class="gnb-link">배달 요청 목록</a>
                   </li>
                 </ul>
               </div>
@@ -89,7 +90,7 @@
                 <a href="" class="gnb-title">공지사항</a>
                 <ul class="gnb-list">
                   <li class="gnb-item">
-                    <a href="" class="gnb-top-link">아파트 공지사항</a>
+                    <a href="" class="gnb-link">아파트 공지사항</a>
                   </li>
                   <li class="gnb-item">
                     <a href="" class="gnb-link">단지 공지사항</a>
@@ -109,8 +110,8 @@
           <a href="" class="nav-link">공지사항</a>
         </ul>
         <ul class="account-menu">
-          <a href="" class="nav-link">채팅</a>
-          <a href="" class="nav-link">로그인</a>
+          <span class="nav-link" onclick="view_chat()">채팅</span>
+          <span class="nav-link" onclick="view_login()">로그인</span>
         </ul>
       </nav>
     </div>
@@ -146,7 +147,25 @@
             <li>
               <div class="post">
                 <a href="#">
-                  <div class="title">2 우리집 강아지 보고가 🐶</div>
+                  <div class="title">2 수제 레몬청 나눔합니다🍋</div>
+                  <div class="detail">
+                    <p>안녕하세요~ 하준맘입니다~^^ 제가 레몬청을 ...</p>
+                    <div class="icons">
+                      <img src="data/chef.png" />
+                      <p>14</p>
+                      <img src="data/speech-bubble.png" />
+                      <p>8</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <ul class="hot_posts">
+            <li>
+              <div class="post">
+                <a href="#">
+                  <div class="title">3 우리집 강아지 보고가 🐶</div>
                   <div class="detail">
                     <p>
                       이름은 초코야 솔직히 푸들 중에서 우리 초코가 젤 예쁜듯
@@ -170,21 +189,26 @@
           <div class="top">
             <div class="category">
               <h5>아파트 커뮤니티</h5>
-              <span><button>글쓰기</button></span>
+              <!-- onclick으로 버튼을 누를 시 게시글 작성 div 펼쳐짐 -->
+              <span> <button id="new-post">글쓰기</button></span>
             </div>
           </div>
+
+          <!-- 게시글 작성 -->
+          <div id="write-post">
+            <input placeholder="게시글을 입력하세요" />
+            <button id="post-btn">글쓰기</button>
+          </div>
+
           <!-- message 목록 -->
           <div class="messages">
             <article>
               <a href="post.html">
                 <div class="message">
                   <div class="detail">
-                    <h6>103동 6층 너무 시끄러워요!!</h6>
+                    <h6>아니 오늘 103동</h6>
 
-                    <p>
-                      조용히 좀 해주세요 왜 하루종일 쿵쾅대고 밤마다 세탁기를
-                      돌리는건가요? 제발 배려하면서 삽시다
-                    </p>
+                    <p>왜이렇게 시끄러워! 😤</p>
                     <div class="icons">
                       <p class="nickname">익명</p>
                       <img src="data/clock.png" />
@@ -204,7 +228,7 @@
                 <div class="message">
                   <div class="detail">
                     <h6>아파트 입구에 새로 생긴 피자집</h6>
-                    <p>가본 사람? 맛있어? 사람은 꽤 많은 것 같던데</p>
+                    <p>맛있어? 사람은 꽤 많은 것 같던데!</p>
                     <div class="icons">
                       <p class="nickname">익명</p>
                       <img src="data/clock.png" />
@@ -222,24 +246,21 @@
               <a href="post.html">
                 <div class="message">
                   <div class="detail">
-                    <h6>우리집 강아지 보고가 🐶</h6>
-                    <p>
-                      이름은 초코야 솔직히 푸들 중에서 우리 초코가 젤 예쁜듯
-                    </p>
+                    <h6>103동 자전거 앞에 지갑 떨어져 있었어요</h6>
+                    <p>주인 연락주세요~</p>
                     <div class="icons">
-                      <p class="nickname">초코언니</p>
+                      <p class="nickname">익명</p>
                       <img src="data/clock.png" />
-                      <p>5분 전</p>
+                      <p>3분 전</p>
                       <img src="data/chef.png" />
-                      <p>7</p>
+                      <p>4</p>
                       <img src="data/speech-bubble.png" />
-                      <p>6</p>
+                      <p>0</p>
                     </div>
                   </div>
-                  <img src="data/choco.jpg" alt="choco" />
+                  <img src="data/wallet.jpg" alt="wallet" />
                 </div>
               </a>
-              <!-- <img src="data/choco.jpg" alt="choco" /> -->
             </article>
             <article>
               <a href="post.html">
@@ -251,7 +272,7 @@
                     <div class="icons">
                       <p class="nickname">익명</p>
                       <img src="data/clock.png" />
-                      <p>7분 전</p>
+                      <p>6분 전</p>
                       <img src="data/chef.png" />
                       <p>0</p>
                       <img src="data/speech-bubble.png" />
@@ -266,8 +287,51 @@
               <a href="post.html">
                 <div class="message">
                   <div class="detail">
+                    <h6>수제 레몬청 나눔합니다🍋</h6>
+                    <p>
+                      안녕하세요~ 하준맘입니다~^^ 제가 레몬청을 너무 많이
+                      만들어서 레몬청 나눔을 하려고 합니다 ㅎㅎ 많이 달지
+                    </p>
+                    <div class="icons">
+                      <p class="nickname">하준맘</p>
+                      <img src="data/clock.png" />
+                      <p>11분 전</p>
+                      <img src="data/chef.png" />
+                      <p>14</p>
+                      <img src="data/speech-bubble.png" />
+                      <p>8</p>
+                    </div>
+                  </div>
+                  <img src="data/lemon.jpg" alt="lemon" />
+                </div>
+              </a>
+              <!-- <img src="data/choco.jpg" alt="choco" /> -->
+            </article>
+            <article>
+              <a href="post.html">
+                <div class="message">
+                  <div class="detail">
+                    <h6>와 오늘 날씨 너무 좋아</h6>
+                    <p></p>
+                    <div class="icons">
+                      <p class="nickname">익명</p>
+                      <img src="data/clock.png" />
+                      <p>13분 전</p>
+                      <img src="data/chef.png" />
+                      <p>0</p>
+                      <img src="data/speech-bubble.png" />
+                      <p>0</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <img src="data/choco.jpg" alt="choco" /> -->
+            </article>
+            <article>
+              <a href="post.html">
+                <div class="message">
+                  <div class="detail">
                     <h6>롯데캐슬 놀이터 공사 안내</h6>
-
                     <p>
                       안녕하십니까 롯데캐슬 주민 여러분 다름이 아니라 오는 7월
                       2일부터 영유아들을 위한 다양한 놀이환경 제공
@@ -285,79 +349,28 @@
                   </div>
                 </div>
               </a>
-              <!-- <img src="data/choco.jpg" alt="choco" /> -->
             </article>
             <article>
               <a href="post.html">
                 <div class="message">
                   <div class="detail">
-                    <h6>롯데캐슬 놀이터 공사 안내</h6>
+                    <h6>우리집 강아지 보고가 🐶</h6>
 
                     <p>
-                      안녕하십니까 롯데캐슬 주민 여러분 다름이 아니라 오는 7월
-                      2일부터 영유아들을 위한 다양한 놀이환경 제공
+                      이름은 초코야 솔직히 푸들 중에서 우리 초코가 젤 예쁜듯
                     </p>
                     <div class="icons">
                       <p class="nickname">경비실</p>
                       <!-- | -->
                       <img src="data/clock.png" />
-                      <p>12분 전</p>
+                      <p>20분 전</p>
                       <img src="data/chef.png" />
-                      <p>39</p>
+                      <p>7</p>
                       <img src="data/speech-bubble.png" />
-                      <p>15</p>
+                      <p>6</p>
                     </div>
                   </div>
-                </div>
-              </a>
-              <!-- <img src="data/choco.jpg" alt="choco" /> -->
-            </article>
-            <article>
-              <a href="post.html">
-                <div class="message">
-                  <div class="detail">
-                    <h6>롯데캐슬 놀이터 공사 안내</h6>
-
-                    <p>
-                      안녕하십니까 롯데캐슬 주민 여러분 다름이 아니라 오는 7월
-                      2일부터 영유아들을 위한 다양한 놀이환경 제공
-                    </p>
-                    <div class="icons">
-                      <p class="nickname">경비실</p>
-                      <!-- | -->
-                      <img src="data/clock.png" />
-                      <p>12분 전</p>
-                      <img src="data/chef.png" />
-                      <p>39</p>
-                      <img src="data/speech-bubble.png" />
-                      <p>15</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <!-- <img src="data/choco.jpg" alt="choco" /> -->
-            </article>
-            <article>
-              <a href="post.html">
-                <div class="message">
-                  <div class="detail">
-                    <h6>롯데캐슬 놀이터 공사 안내</h6>
-
-                    <p>
-                      안녕하십니까 롯데캐슬 주민 여러분 다름이 아니라 오는 7월
-                      2일부터 영유아들을 위한 다양한 놀이환경 제공
-                    </p>
-                    <div class="icons">
-                      <p class="nickname">경비실</p>
-                      <!-- | -->
-                      <img src="data/clock.png" />
-                      <p>12분 전</p>
-                      <img src="data/chef.png" />
-                      <p>39</p>
-                      <img src="data/speech-bubble.png" />
-                      <p>15</p>
-                    </div>
-                  </div>
+                  <img src="data/choco.jpg" alt="choco" />
                 </div>
               </a>
               <!-- <img src="data/choco.jpg" alt="choco" /> -->
@@ -482,5 +495,6 @@
       </div>
     </div>
     <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="post.js"></script>
   </body>
 </html>

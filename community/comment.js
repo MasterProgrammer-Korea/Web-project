@@ -1,4 +1,4 @@
-// #more - 댓글작성 div가 나오도록 하는 버튼
+// #more - 댓글 작성 div가 나오도록 하는 버튼
 // #more 버튼을 클릭했을 때
 $("#more").click(function () {
   // #write-comment의 display가 "none"일 경우 (접혀있는 경우)
