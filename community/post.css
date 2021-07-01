@@ -163,9 +163,13 @@ article .icons p {
 .comment-info {
   display: flex;
   padding: 15px 25px;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   box-shadow: 0px 1px#ececec;
+  height: 30px;
+}
+.comment-info h6 {
+  padding-top: 5px;
 }
 .comment {
   display: flex;
@@ -258,9 +262,34 @@ h6 {
   font-size: 1rem;
   display: block;
 }
-button {
+/* button {
   padding: 5px 10px;
   margin-left: 220px;
+  background-color: #df7000;
+  border: 1px;
+  border-radius: 4px;
+  color: white;
+  font-family: "S-CoreDream-3Light";
+  box-shadow: 1px 1px 1px #ececec;
+} */
+#write-comment {
+  display: none;
+  font-size: 1.2rem;
+  padding: 20px 0 20px 20px;
+  box-shadow: 0px 1px#ececec;
+  background-color: #f0f0f0;
+}
+#write-comment input {
+  font-family: "S-CoreDream-3Light";
+  width: 80%;
+  margin-right: 26px;
+  border: 0px;
+  /* border: 1px solid #c8c8c8; */
+  background-color: #f0f0f0;
+}
+button {
+  padding: 5px 10px;
+  /* margin-right: 5px; */
   background-color: #df7000;
   border: 1px;
   border-radius: 4px;
