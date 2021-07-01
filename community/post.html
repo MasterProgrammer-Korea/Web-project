@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="iutkiut.css" />
     <link rel="stylesheet" href="post.css" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <title>이웃기웃</title>
   </head>
   <body>
@@ -38,8 +39,8 @@
                 </ul>
               </div>
               <div class="gnb-grid gnb-border-right">
-                <p class="gnb-empty-title">_</p>
                 <ul class="gnb-list">
+                  <p class="gnb-empty-title">_</p>
                   <li class="gnb-item">
                     <a href="" class="gnb-link">동아리 커뮤니티</a>
                   </li>
@@ -81,7 +82,7 @@
                     <a href="" class="gnb-link">배달 희망 등록</a>
                   </li>
                   <li class="gnb-item">
-                    <a href="" class="gnb-link">주문 목록</a>
+                    <a href="" class="gnb-link">배달 요청 목록</a>
                   </li>
                 </ul>
               </div>
@@ -89,7 +90,7 @@
                 <a href="" class="gnb-title">공지사항</a>
                 <ul class="gnb-list">
                   <li class="gnb-item">
-                    <a href="" class="gnb-top-link">아파트 공지사항</a>
+                    <a href="" class="gnb-link">아파트 공지사항</a>
                   </li>
                   <li class="gnb-item">
                     <a href="" class="gnb-link">단지 공지사항</a>
@@ -109,11 +110,12 @@
           <a href="" class="nav-link">공지사항</a>
         </ul>
         <ul class="account-menu">
-          <a href="" class="nav-link">채팅</a>
-          <a href="" class="nav-link">로그인</a>
+          <span class="nav-link" onclick="view_chat()">채팅</span>
+          <span class="nav-link" onclick="view_login()">로그인</span>
         </ul>
       </nav>
     </div>
+
     <!-- main -->
     <div class="main">
       <div id="container">
@@ -128,9 +130,9 @@
             <li>
               <div class="post">
                 <a href="post.html">
-                  <div class="title">1 OO아파트 놀이터 공사 안내</div>
+                  <div class="title">1 롯데캐슬 놀이터 공사 안내</div>
                   <div class="detail">
-                    <p>안녕하십니까 OO아파트 주민 여러분 ...</p>
+                    <p>안녕하십니까 롯데캐슬 주민 여러분 ...</p>
                     <div class="icons">
                       <img src="data/chef.png" />
                       <p>39</p>
@@ -186,9 +188,9 @@
               </div>
               <div class="message">
                 <div class="detail">
-                  <h6>OO아파트 놀이터 공사 안내</h6>
+                  <h6>롯데캐슬 놀이터 공사 안내</h6>
                   <p>
-                    안녕하십니까 OO아파트 주민 여러분
+                    안녕하십니까 롯데캐슬 주민 여러분
                     <br />
                     <br />
                     다름이 아니라 오는 7월 2일부터 영유아들을 위한 다양한
@@ -218,10 +220,22 @@
           <div class="comments">
             <div class="comment-info">
               <h6>댓글 15</h6>
-              <span><button>댓글 작성</button></span>
+              <!-- onclick으로 버튼을 누를 시 댓글 작성 div 펼쳐짐 -->
+              <span>
+                <!-- ><button id="more" onclick="comment()">댓글 작성</button></span -->
+                <button id="more" onclick="comment()">댓글 작성</button></span
+              >
             </div>
+
+            <!-- 댓글 작성 -->
+            <div id="write-comment">
+              <input placeholder="댓글을 입력하세요" />
+              <button id="comment-btn">댓글 작성</button>
+            </div>
+
+            <!-- 댓글 목록 -->
             <div class="comment">
-              <p class="comment-name">105동 하준맘</p>
+              <p class="comment-name">하준맘</p>
               <p>어머 우리 아들이 좋아하겠네요 ^^</p>
               <div class="icons">
                 <img src="data/clock.png" />
@@ -256,9 +270,51 @@
                 <p>0</p>
               </div>
             </div>
+            <div class="comment">
+              <p class="comment-name">익명 2</p>
+              <p>508동 앞에 있는 놀이터는 공사 안하나요?</p>
+              <div class="icons">
+                <img src="data/clock.png" />
+                <p>방금</p>
+                <img src="data/speech-bubble.png" />
+                <p>0</p>
+                <img src="data/chef.png" />
+                <p>0</p>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="comment-name">익명 2</p>
+              <p>508동 앞에 있는 놀이터는 공사 안하나요?</p>
+              <div class="icons">
+                <img src="data/clock.png" />
+                <p>방금</p>
+                <img src="data/speech-bubble.png" />
+                <p>0</p>
+                <img src="data/chef.png" />
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- chat-panel -->
+      <div id="chat-panel" class="chat-panel">
+        <div class="chat-room">
+          <p class="chat-title">채팅</p>
+          <div class="chat-content">
+            <div class="chat">
+              <p>안녕하세요</p>
+            </div>
+          </div>
+          <div class="chat-box">
+            <textarea name="chat-input" class="chat-input"></textarea>
+            <span><button class="chat-button">전송</button></span>
           </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="home.js"></script>
+    <script type="text/javascript" src="comment.js"></script>
   </body>
 </html>
