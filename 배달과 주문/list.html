@@ -4,16 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="iutkiut.css">
     <link rel="stylesheet" href="list.css">
     <title>배달 목록 화면</title>
+    <style>
+      .btn3 {
+        background-color: #f7f0e47a;
+        padding: 15px;
+        margin: 10px;
+        border: 1px solid rgba(214, 214, 214, 0.664);
+        color: #444343;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        border-radius: 10px;
+      }
+      .btn1:hover { box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 2px 7px 0 rgba(0,0,0,0.19); }
+    </style>
   </head>
 
 <!-- Header!!!! -->
 <div id="header">
   <nav class="nav-bar">
       <a href="" class="logo-area">
-          <img src="logo.png" class="logo" alt="logo">
+          <img src="https://github.com/MasterProgrammer-Korea/Web-project/blob/main/iutkiut/data/logo.png?raw=true" class="logo" alt="logo">
       </a>
       <ul class="center-menu">
           <a href="" class="cur-page-link">메인</a>
@@ -119,110 +138,107 @@
 </div><br>
 
 <!-- start!! -->
-  <div class="container">
-    <main>
+  <div class="main">
+    <div class="container">
+      <div class="wrap">
         <div class="do_deliver">
-          <div class="img">
-            <img src="https://image.flaticon.com/icons/png/512/2558/2558317.png" width="250" height="220">
+          <h1>배달을 해보세요!</h1>
+        </div><hr><br>
+
+        <div class="list">
+        <strong>배달 요청 목록</strong>
+        </div>
+
+        <div class="cards">
+          <div class="card shadow-sm">
+            <img src="https://mblogthumb-phinf.pstatic.net/20160426_55/ppanppane_14616500115941uytb_PNG/%C6%C4%B8%AE%B9%D9%B0%D4%C6%AE_%B7%CE%B0%ED_%282%29.png?type=w800" width="200" height="150">
+            <div class="card-body">
+              <p class="card-order">주문 내역: 파리바게뜨에서 '연유 바게뜨' 하나랑 단팥빵 하나 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 서북구 두정동 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
           </div>
-          <h1><span style="background-color: #fc9a3848;">배달을 해보세요!</span></h1>
-          <h2>배달 주문을 선택하여 이웃 기사님이 되어 보세요.</h2>
-        </div><br><br><hr><br>
+          
+          <div class="card shadow-sm">
+            <img src="https://blog.kakaocdn.net/dn/bJsBCT/btqwTxzklpN/nf9zv5kxH99VyHK47rqeVK/img.jpg" width="200" height="150">
+            <div class="card-body">
+              <p class="card-order">주문 내역: KFC에서 징거버거 세트 하나랑 징거버거 단품 하나 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 서북구 성거읍 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
 
+          <div class="card shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/CU_BI_%282017%29.svg/1200px-CU_BI_%282017%29.svg.png" width="180" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: CU에서 새우탕 컵라면 하나랑 물 500ml짜리 두 병 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 동남구 신부동 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
 
+          <div class="card shadow-sm">
+            <img src="https://blog.kakaocdn.net/dn/opebh/btqyPUMee3Q/S2Jsary7W5KXHq6CVTeRcK/img.jpg" width="200" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: 스타벅스에서 아이스 아메리카노 톨 사이즈 한 잔 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 서북구 불당동 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
+          
+          <div class="card shadow-sm">
+            <img src="https://cafe24img.poxo.com/afrimo/file_data/afrimo/2019/07/24/47bde1f664095fdd3651b326151be8ad.png" width="200" height="150">
+            <div class="card-body">
+              <p class="card-order">주문 내역: 올리브영에서 센카 퍼펙트 휩 화이트 클레이 하나 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 동남구 안서동 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
 
-<!-- list!!! -->
-          <strong><p style="text-align:center">배달 요청 목록</p></strong>
+          <div class="card shadow-sm">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaToYJYT9d_11at5LPNHmcWIajYwfwQqY0g&usqp=CAU" width="180" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: 이마트 24에서 노브랜드 버터쿠키 한 통이랑 민생라면 컵라면 하나 사다 주세요.</p><br>
+              <p class="card-address">주소: 아산시 신창면 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
 
-        <div class="support-grid"></div>
-          <div class="band">
-          <div class="cards">
-            <div class="card">
-              <img src="https://mblogthumb-phinf.pstatic.net/20160426_55/ppanppane_14616500115941uytb_PNG/%C6%C4%B8%AE%B9%D9%B0%D4%C6%AE_%B7%CE%B0%ED_%282%29.png?type=w800" width="250" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 파리바게뜨에서 '연유 바게뜨' 하나랑, 생크림 하나 사다 주세요.</p>
-                  <small class="time">14시간 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
+          <div class="card shadow-sm">
+            <img src="https://images-kr.girlstyle.com/wp-content/uploads/2019/02/LOHBS_img_logo_560X560.png" width="200" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: 롭스에서 하다라보 로션 하나랑 섀도우 브러쉬 하나 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 서북구 백석동 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
             </div>
-  
-            <div class="card">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cc1wS_oWfWZjrvkEfS0DxRTp0JHvXZhQrq1kXP_CM5XZw308IPJiddP-9Zqbb6gsYXQ&usqp=CAU" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: GS25에서 새우탕 컵라면 하나랑 펩시 500ml짜리 하나 사다 주세요.</p>
-                  <small class="time">2일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
+          </div>
+          
+          <div class="card shadow-sm">
+            <img src="http://img.khan.co.kr/news/2018/10/03/l_2018100301000484200028931.jpg" width="200" height="150">
+            <div class="card-body">
+              <p class="card-order">주문 내역: 봉구스 밥버거에서 치킨마요에 김치 추가 한 밥버거 하나 사다 주세요.</p><br>
+              <p class="card-address">주소: 천안시 동남구 쌍용동 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
             </div>
-  
-            <div class="card">
-              <img src="https://thumb.mt.co.kr/06/2020/12/2020122115062970515_1.jpg/dims/optimize/" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 근처 약국에서 타이레놀 하나랑 박카스 하나 사다 주세요.</p>
-                  <small class="time">3일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
-            </div>
-  
-            <div class="card">
-              <img src="https://t1.daumcdn.net/cfile/tistory/9910604C5ED3830D0C" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 스타벅스에서 아이스 아메리카노 톨 사이즈 한 잔 사다 주세요.</p>
-                  <small class="time">5일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
-            </div>
+          </div>
 
-            <div class="card">
-              <img src="https://thumb.mt.co.kr/06/2020/12/2020122115062970515_1.jpg/dims/optimize/" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 근처 약국에서 타이레놀 하나랑 박카스 하나 사다 주세요.</p>
-                  <small class="time">3일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
+          <div class="card shadow-sm">
+            <img src="https://starfield.co.kr/cdn/images/tenants/G266/img_logo.png" width="180" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: 공차에서 타로밀크티(당도 50, 얼음 less, 펄 추가) 한 잔 사다 주세요.</p><br>
+              <p class="card-address">주소: 아산시 탕정면 oo아파트 0동 - 0호</p><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
             </div>
-  
-            <div class="card">
-              <img src="https://t1.daumcdn.net/cfile/tistory/9910604C5ED3830D0C" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 스타벅스에서 아이스 아메리카노 톨 사이즈 한 잔 사다 주세요.</p>
-                  <small class="time">5일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
-            </div>
+          </div>
 
-            <div class="card">
-              <img src="https://t1.daumcdn.net/cfile/tistory/9910604C5ED3830D0C" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 스타벅스에서 아이스 아메리카노 톨 사이즈 한 잔 사다 주세요.</p>
-                  <small class="time">5일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="https://thumb.mt.co.kr/06/2020/12/2020122115062970515_1.jpg/dims/optimize/" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 근처 약국에서 타이레놀 하나랑 박카스 하나 사다 주세요.</p>
-                  <small class="time">3일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
-            </div>
-  
-            <div class="card">
-              <img src="https://t1.daumcdn.net/cfile/tistory/9910604C5ED3830D0C" width="260" height="150">
-              <div class="card-body">
-                <p class="card-text">주문 내역: 스타벅스에서 아이스 아메리카노 톨 사이즈 한 잔 사다 주세요.</p>
-                  <small class="time">5일 전</small><br>
-                  <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
-              </div>
-            </div>
-
+          <div class="back">
+            <a href="#">Back to top</a>
+          </div>
 
 
 
           </div>
-    </main>
-  </div>
+        </div>
+      </div>
 </body>
 </html>
