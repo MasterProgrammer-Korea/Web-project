@@ -12,7 +12,7 @@
     justify-content:space-around;
     font-family: 'S-CoreDream-3Light';
     background-color:#fafbfc;
-}
+  }
 
 .main {
     padding-top: 80px;
@@ -31,6 +31,24 @@
     background-color: #ffffff;
 }
 
+.box {
+	top: 50px;
+	left: 100px;
+	width: 780px;
+	background-color: rgba(255, 255, 255, 0.932);
+	color: #5B5656;
+	padding: 15px 20px 20px 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(245, 232, 207, 0.61);
+    margin: 10px auto;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+}
+
+.img {
+    text-align: center;
+}
+
 h1 {
     font-size: 2.5em;
     display: flex;
@@ -39,22 +57,15 @@ h1 {
     font-weight: bold;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 16px;
-    color: #5B5656;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 h3{
     font-size: 1.6rem;
-    color: 
     font-weight: bold;
     font-family: 'S-CoreDream-3Light';
-    color: #504f4f;
+    color: #DF7000;
     padding-left: 10px;
     padding-bottom: 10px;
 }
@@ -68,20 +79,27 @@ p {
 }
 
 span {
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 1.6rem;
+    text-align: justify;
     color: #5B5656;
-    padding: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
-.list {
+.history {
     font-size: 2.5rem;
     padding: 20px;
     text-align: center;
 }
 
+.btn2 {
+    font-family:'S-CoreDream-3Light';
+}
+
 .btn1 {
     font-family:'S-CoreDream-3Light';
+    display: flex;
+    justify-items: center;
 }
 
 .back {
@@ -98,20 +116,20 @@ span {
 }
 
 .card {
-	height: 350px;
-	width: 270px;
+	height: 300px;
+	width: 205px;
 	border-radius: 15px;
 	display: inline-block;
 	margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 	position: center;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 }
 
 .card-body {
     text-align: center;
-    margin: 21px;
+    margin: 10px;
 }
