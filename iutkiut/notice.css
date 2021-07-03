@@ -476,7 +476,11 @@
     font-weight: bold;
     font-size: 1.6rem;
     color: #444444;
-  }
+}
+
+.main-middle-title:hover{
+    color: #df7000;
+}
 
 .main-paragraph:hover .main-articles{
   display: block;
