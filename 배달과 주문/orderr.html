@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="iutkiut.css">
     <link rel="stylesheet" href="orderr.css">
     <title>배달 주문하기</title>
@@ -26,9 +27,9 @@
 	</style>
     <style>
 		.btn3 {
-			background-color: #cacac777;
+			background-color: #ccccca77;
             padding: 8px;
-			margin: 2px;
+			margin-top: 10px;
 			border: none;
 			color: black;
 			text-decoration: none;
@@ -43,11 +44,11 @@
 	</style>
   </head>
 
-      <!-- header-->
-      <div id="header">
+      <!-- header -->
+    <div id="header">
         <nav class="nav-bar">
             <a href="" class="logo-area">
-                <img src="logo.png" class="logo" alt="logo">
+                <img src="https://github.com/MasterProgrammer-Korea/Web-project/blob/main/iutkiut/data/logo.png?raw=true" class="logo" alt="logo">
             </a>
             <ul class="center-menu">
                 <a href="" class="cur-page-link">메인</a>
@@ -150,66 +151,58 @@
                 <a href="" class="nav-link">로그인</a>
             </ul>
         </nav>
-      </div><br>
+    </div><br>
 
       
 <!--start!!-->
+    <div class="main">
     <div class="container">
-    <main>
+        <div class="wrap">
         <div class="do_order">
-            <div class="img">
-              <img src="https://image.flaticon.com/icons/png/512/2558/2558162.png" width="250" height="220">
-            </div>
-            <h1><span style="background-color: #fc9a3848;">주문을 해보세요!</span></h1>
-            <h2>주문표를 작성하여 이웃 기사님께 주문을 해보세요.</h2>
-          </div><br><br><hr><br>
+            <h1>주문하기</h1>
+        </div><hr><br>
 
         <div class="address">
-        <h3>요청지 주소</h3>>
-        <label for="address">상세주소 입력</label>
+        <h3>> 요청지 주소</h3><br>
         <form class="address_input">
               <input type="text" class="address_input" id="search" placeholder="주소(동/도로명/건물명)" value="" required><br>
               <div class="search">
               <button class="btn3 btn1" type="submit">동/도로명/건물명 검색</button><br>
               </div><br>
               <input type="text" class="address_input" id="search" placeholder="상세 주소" value="" required>
-        </form><br>
+        </form>
       </div>
 
         <div class="ask">
-        <h3>요청사항 입력</h3>
+        <h3>> 요청사항 입력</h3><br>
               <textarea rows="10" cols="10" name="request" class="form-control" id="request">  자세한 요청 사항을 적어주세요.</textarea>
       </div>
 
         <div class="photo">
-        <h3>상품 사진 업로드</h3>
-        <label for="photo">> 상품의 사진을 업로드 해주세요<span class="add_text">(선택)</span></label>
+        <h3>> 상품 사진 업로드(선택)</h3><br>
         <form class="photo_input">
               <input type="file" name="FileName">
-        </form><br>
+        </form>
         </div>
 
         <div class="pay">
-        <h3>결제 수단 선택</h3>
+        <h3>> 결제 수단 선택</h3><br>
         <form class="payment">
-            <div class="pay">
               <input id="money" name="paymentMethod" type="radio" class="paycheck" check required>
-              <label class="pclabel" for="money">현금 결제</label><br>
+              <label class="pclabel" for="money">현금 결제</label><br><br>
               <input id="remit" name="paymentMethod" type="radio" class="paycheck" required>
-              <label class="pclabel" for="remit">계좌이체</label><br>
+              <label class="pclabel" for="remit">계좌이체</label><br><br>
               <input id="etc" name="paymentMethod" type="radio" class="paycheck" required>
               <label class="pclabel" for="etc">기타</label>
-            </div>    
-        </form><br>
+        </form>
         </div>
 
         <div class="cost">
-        <h3>총 배달 비용</h3>
-        <label for="cost">> 배달 비용과 아래의 상품 비용을 합해서 적어주세요<span class="add_text">(필수)</span></label>
+        <h3>> 총 배달 비용(배달 비용 + 상품 비용)</h3><br>
         <form class="cost_input">
-        <label for="address">> 총 합</label><br>
+        <label for="address">> 총 합 < </label><br>
             <input type="text" class="form-control" id="sum" placeholder="" required>
-        </form><br>
+        </form>
         </div>
 
         <div class="submit">
@@ -217,12 +210,11 @@
         </div>
 
         <div class="back">
-          <p class="float-end mb-1">
           <a href="#">Back to top</a>
-          </p>
         </div>
-      </main>
       </div>
+    </div>
+</div>
 </div>
 </body>
 </html>
