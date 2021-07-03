@@ -113,7 +113,7 @@
                 <a href="" class="nav-link">공지사항</a>
             </ul>
             <ul class="account-menu">
-                <span class="nav-link" onclick="view_chat()">채팅</span>
+                <span id="chat-button" class="nav-link" onclick="view_chat()">채팅</span>
                 <span class="nav-link" onclick="view_login()">로그인</span>
             </ul>
         </nav>
@@ -122,7 +122,7 @@
     <div id="login-panel" >
         <div class="login-container">
             <div class="login-close" onclick="close_login()">
-                <p>X</p>
+                <p>x</p>
             </div>
             <div class="login-title">
                 <p>로그인</p>
@@ -136,13 +136,45 @@
             <p><button type="submit" class="login-button">로그인</button></p>
         </div>
     </div>
+    <div id="chat-panel" class="chat-panel">
+        <div class="chat-room">
+            <div class="chat-top">
+                <p class="chat-back"><</p>
+                <p class="chat-title">초코언니</p>
+                <p class="chat-menu">≡</p>
+            </div>
+            <div class="chat-content">
+                <div class="chat">
+                    <div class="right-chat-box">
+                        <div class="right-chat">
+                            <p class="right-message">초코 너무 귀여워요ㅠㅠ</p>
+                        </div>
+                    </div>
+                    <div class="left-chat-box">
+                        <div class="left-chat">
+                            <p class="chat-message">감사합니다 ^__^</p>
+                        </div>
+                    </div>
+                    <div class="right-chat-box">
+                        <div class="right-chat">
+                            <p class="right-message">산책할 때 불러주세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-box">
+                <textarea name="chat-input" class="chat-input"></textarea>
+                <span><button class="chat-button">전송</button></span>                    
+            </div>
+        </div>
+    </div>
 
     <!-- main -->
     <div id="main">
         <div class="main-container">
             <div class="notice-panel">
                 <a href="" class="main-panel-title">공지사항</a>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">103동 아파트 공지사항 ></a>
                     </div>
@@ -161,17 +193,17 @@
                     <article class="notice-article">
                         <a href="" class="message-button">
                             <div>
-                                <p class="message">테스트1</p>
-                                <p class="message-content">테스트1의 내용</p>
+                                <p class="message">흡연구역 위치 변경 안내</p>
+                                <p class="message-content">기존 103동 지하주차장에 있던 흡연구역 위치가 민원으로 인해 변경되었습니다.</p>
                             </div>
                             <div>
-                                <span class="detail">테스트1의 작성자</span>
-                                <span class="detail">2021.06.30.</span>
+                                <span class="detail">103동 입주자대표</span>
+                                <span class="detail">2021.06.28.</span>
                             </div>
                         </a>
                     </article>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">1단지 공지사항 ></a>
                     </div>
@@ -183,24 +215,24 @@
                             </div>
                             <div>
                                 <span class="detail">롯데캐슬 관리자</span>
-                                <span class="detail">2021.06.12.</span>
+                                <span class="detail">2021.06.30.</span>
                             </div>
                         </a>
                     </article>
                     <article class="notice-article">
                         <a href="" class="message-button">
                             <div>
-                                <p class="message">테스트2</p>
-                                <p class="message-content">테스트2의 내용</p>
+                                <p class="message">잃어버린 몽실이를 찾습니다.</p>
+                                <p class="message-content">어제(29일) 낮 2시쯤에 놀이터에서 놀고 있다가 사라졌습니다.</p>
                             </div>
                             <div>
-                                <span class="detail">테스트2의 작성자</span>
+                                <span class="detail">103동 채희찬</span>
                                 <span class="detail">2021.06.30.</span>
                             </div>
                         </a>
                     </article>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">까치마을 공지사항 ></a>
                     </div>
@@ -219,41 +251,41 @@
                     <article class="notice-article">
                         <a href="" class="message-button">
                             <div>
-                                <p class="message">테스트3</p>
-                                <p class="message-content">테스트3의 내용</p>
+                                <p class="message">까치마을 자치운영위원장 선거 공지</p>
+                                <p class="message-content">7월 11일(일)에 까치마을 자치운영위원장 선거가 진행됩니다. </p>
                             </div>
                             <div>
-                                <span class="detail">테스트3의 작성자</span>
-                                <span class="detail">2021.06.30.</span>
+                                <span class="detail">자치운영위원회</span>
+                                <span class="detail">2021.06.20.</span>
                             </div>
                         </a>
                     </article>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">구성동 공지사항 ></a>
                     </div>
                     <article class="notice-article">
                         <a href="" class="message-button">
                             <div>
-                                <p class="message">GTX-A노선 용인역(구성역) 정차 확정</p>
-                                <p class="message-content">18일 국토교통부에서 GTX-A노선 5역 중 성남, 용인(구성) 중간역 2곳을 확정했습니다!</p>
+                                <p class="message">구성동 주민자치위원 모집 공고</p>
+                                <p class="message-content">「용인시 주민자치센터 설치 및 운영조례」제17조에 의하여 구성동 주민자치위원을 다음과 같이 공모합니다.</p>
                             </div>
                             <div>
                                 <span class="detail">구성동 주민센터</span>
-                                <span class="detail">2021.06.28.</span>
+                                <span class="detail">2021.06.29.</span>
                             </div>
                         </a>
                     </article>
                     <article class="notice-article">
                         <a href="" class="message-button">
                             <div>
-                                <p class="message">테스트4</p>
-                                <p class="message-content">테스트4의 내용</p>
+                                <p class="message">장애인 응급안전 안심서비스사업 대상자 모집</p>
+                                <p class="message-content">활동지원서비스를 이용하고 있는 수급자 중 서비스 지원이 필요한 대상자께서는 신청하여주시기 바랍니다.</p>
                             </div>
                             <div>
-                                <span class="detail">테스트4의 작성자</span>
-                                <span class="detail">2021.06.30.</span>
+                                <span class="detail">장애인복지과</span>
+                                <span class="detail">2021.06.17.</span>
                             </div>
                         </a>
                     </article>
@@ -261,53 +293,120 @@
             </div>
             <div class="community-panel">
                 <a href="" class="main-panel-title">커뮤니티</a>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">실시간 인기 글 ></a>
                     </div>
-                    <div class="notice-articles">
+                    <div class="main-articles">
                         <article class="notice-article">
                             <a href="" class="message-button">
                                 <div>
-                                    <p class="message">우리 초코 귀엽죠??</p>
-                                    <p class="message-content">우리 초코 귀엽죠??</p>
-                                </div>
-                                <div>
-                                    <span class="detail">연주</span>
-                                    <span class="detail">2021.06.25.</span>
-                                </div>
+                                <p class="message">롯데캐슬 놀이터 공사 안내</p>
+                                <p class="message-content">안녕하십니까 롯데캐슬 주민 여러분 다름이 아니라 오는 7월
+                                    2일부터 영유아들을 위한 다양한 놀이환경 제공</p>
+                                    <div class="icons">
+                                        <p class="nickname">경비실</p>
+                                        <img class="icon" src="data/clock.png" />
+                                        <p>12분 전</p>
+                                        <img class="icon" src="data/chef.png" />
+                                        <p>39</p>
+                                        <img class="icon" src="data/speech-bubble.png" />
+                                        <p>15</p>
+                                    </div>
+                                </div>    
                             </a>
                         </article>
                         <article class="notice-article">
                             <a href="" class="message-button">
                                 <div>
-                                    <p class="message">테스트1</p>
-                                    <p class="message-content">테스트1의 내용</p>
+                                <p class="message">우리집 강아지 보고가 🐶</p>
+                                <p class="message-content">이름은 초코야 솔직히 푸들 중에서 우리 초코가 젤 예쁜듯</p>
+                                    <div class="icons">
+                                        <p class="nickname">초코언니</p>
+                                        <img class="icon" src="data/clock.png" />
+                                        <p>5분 전</p>
+                                        <img class="icon" src="data/chef.png" />
+                                        <p>7</p>
+                                        <img class="icon" src="data/speech-bubble.png" />
+                                        <p>6</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span class="detail">테스트1의 작성자</span>
-                                    <span class="detail">2021.06.30.</span>
-                                </div>
+                                <img class="article-image" src="data/choco.jpg" alt="choco" />    
                             </a>
                         </article>
                     </div>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">103동 아파트 커뮤니티 ></a>
                     </div>
+                    <div class="main-articles">
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                <p class="message">103동 6층 너무 시끄러워요!!</p>
+                                <p class="message-content">조용히 좀 해주세요 왜 하루종일 쿵쾅대고 밤마다 세탁기를
+                                    돌리는건가요? 제발 배려하면서 삽시다</p>
+                                    <div class="icons">
+                                        <p class="nickname">익명</p>
+                                        <img class="icon" src="data/clock.png" />
+                                        <p>1분 전</p>
+                                        <img class="icon" src="data/chef.png" />
+                                        <p>0</p>
+                                        <img class="icon" src="data/speech-bubble.png" />
+                                        <p>2</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </article>
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                <p class="message">우리집 강아지 보고가 🐶</p>
+                                <p class="message-content">이름은 초코야 솔직히 푸들 중에서 우리 초코가 젤 예쁜듯</p>
+                                    <div class="icons">
+                                        <p class="nickname">초코언니</p>
+                                        <img class="icon" src="data/clock.png" />
+                                        <p>5분 전</p>
+                                        <img class="icon" src="data/chef.png" />
+                                        <p>7</p>
+                                        <img class="icon" src="data/speech-bubble.png" />
+                                        <p>6</p>
+                                    </div>
+                                </div>
+                                <img class="article-image" src="data/choco.jpg" alt="choco" />    
+                            </a>
+                        </article>
+                        <article class="notice-article">
+                            <a href="" class="message-button">
+                                <div>
+                                <p class="message">심심해</p>
+                                <p class="message-content">다들 뭐함?</p>
+                                    <div class="icons">
+                                        <p class="nickname">익명</p>
+                                        <img class="icon" src="data/clock.png" />
+                                        <p>7분 전</p>
+                                        <img class="icon" src="data/chef.png" />
+                                        <p>0</p>
+                                        <img class="icon" src="data/speech-bubble.png" />
+                                        <p>5</p>
+                                    </div>
+                                </div>    
+                            </a>
+                        </article>
+                    </div>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">1단지 커뮤니티 ></a>
                     </div>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">까치마을 커뮤니티 ></a>
                     </div>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">구성동 커뮤니티 ></a>
                     </div>
@@ -315,11 +414,11 @@
             </div>
             <div class="delivery-panel">
                 <a href="" class="main-panel-title">배달</a>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">주문하기 ></a>
                     </div>
-                    <div class="notice-articles">
+                    <div class="main-articles">
                         <article class="notice-article">
                             <a href="" class="message-button">
                                 <div>
@@ -343,11 +442,11 @@
                         </article>
                     </div>
                 </div>
-                <div class="main-notice">
+                <div class="main-paragraph">
                     <div class="main-middle-title-box">
                         <a href="" class="main-middle-title">배달하기 ></a>
                     </div>
-                    <div class="notice-articles">
+                    <div class="main-articles">
                         <article class="notice-article">
                             <a href="" class="message-button">
                                 <div>
@@ -363,21 +462,6 @@
                             </a>
                         </article>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="chat-panel" class="chat-panel">
-            <div class="chat-room">
-                <p class="chat-title">채팅</p>
-                <div class="chat-content">
-                    <div class="chat">
-                        <p>안녕하세요</p>
-                    </div>
-                </div>
-                <div class="chat-box">
-                    <textarea name="chat-input" class="chat-input"></textarea>
-                    <span><button class="chat-button">전송</button></span>                    
                 </div>
             </div>
         </div>
