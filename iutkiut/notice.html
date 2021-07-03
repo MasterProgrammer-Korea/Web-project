@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="notice.css">
+    <title>공지사항 - 이웃기웃</title>
+</head>
+<body>
+    
+    <!-- header -->
+    <div id="header">
+        <nav class="nav-bar">
+            <a href="" class="logo-area">
+                <img src="data/logo.png" class="logo" alt="logo">
+            </a>
+            <ul class="center-menu">
+                <a href="" class="nav-link">메인</a>
+                <div class="gnb-panel">
+                    <div class="gnb-grids">
+                        <div class="gnb-grid">
+                            <a href="" class="gnb-title">커뮤니티</a>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">아파트 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">단지 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">마을 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">동/면/리 커뮤니티</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid gnb-border-right">  
+                            <ul class="gnb-list">
+                                <p class="gnb-empty-title">
+                                    _
+                                </p>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">동아리 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">대여 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">같이 할 사람</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-top-link">더 보기</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid">
+                            <a href="" class="gnb-title">배달</a>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-top-link">주문하기</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">음식 포장</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">편의점 / 약</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">심부름 / 기타</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid gnb-border-right">
+                            <p class="gnb-empty-title">
+                                _
+                            </p>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-top-link">배달하기</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">배달 희망 등록</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">배달 요청 목록</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid">
+                            <a href="" class="gnb-title">공지사항</a>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">아파트 공지사항</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">단지 공지사항</a>
+                                </il>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">마을 공지사항</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">동/면/리 공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="nav-link">커뮤니티</a>
+                <a href="" class="nav-link">배달</a>
+                <a href="" class="cur-page-link">공지사항</a>
+            </ul>
+            <ul class="account-menu">
+                <span id="chat-button" class="nav-link" onclick="view_chat()">채팅</span>
+                <span class="nav-link" onclick="view_login()">로그인</span>
+            </ul>
+        </nav>
+    </div>
+    <div id="login-background-panel"></div>
+    <div id="login-panel" >
+        <div class="login-container">
+            <div class="login-close" onclick="close_login()">
+                <p>x</p>
+            </div>
+            <div class="login-title">
+                <p>로그인</p>
+            </div>
+            <div>
+                <p class="login-info">아이디 ></p>
+                <input type="text" class="login-info-inputbox">
+                <p class="login-info">비밀번호 ></p>
+                <input type="password" class="login-info-inputbox">
+            </div>
+            <p><button type="submit" class="login-button">로그인</button></p>
+        </div>
+    </div>
+    <div id="chat-panel" class="chat-panel">
+        <div class="chat-room">
+            <div class="chat-top">
+                <p class="chat-back"><</p>
+                <p class="chat-title">초코언니</p>
+                <p class="chat-menu">≡</p>
+            </div>
+            <div class="chat-content">
+                <div class="chat">
+                    <div class="right-chat-box">
+                        <div class="right-chat">
+                            <p class="right-message">초코 너무 귀여워요ㅠㅠ</p>
+                        </div>
+                    </div>
+                    <div class="left-chat-box">
+                        <div class="left-chat">
+                            <p class="chat-message">감사합니다 ^__^</p>
+                        </div>
+                    </div>
+                    <div class="right-chat-box">
+                        <div class="right-chat">
+                            <p class="right-message">산책할 때 불러주세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-box">
+                <textarea name="chat-input" class="chat-input"></textarea>
+                <span><button class="chat-button">전송</button></span>                    
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div id="main">
+        <div class="main-container">
+            <div class="side-panel">
+                <a href="" class="main-panel-title">공지사항</a>
+                <div class="main-paragraph">
+                    <div class="main-middle-title-box">
+                        <a href="" class="main-middle-title">103동 아파트 공지사항 ></a>
+                    </div>
+                </div>
+                <div class="main-paragraph">
+                    <div class="main-middle-title-box">
+                        <a href="" class="main-middle-title">1단지 공지사항 ></a>
+                    </div>
+                </div>
+                <div class="main-paragraph">
+                    <div class="main-middle-title-box">
+                        <a href="" class="main-middle-title">까치마을 공지사항 ></a>
+                    </div>
+                </div>
+                <div class="main-paragraph">
+                    <div class="main-middle-current-title-box">
+                        <a href="" class="main-middle-current-title">구성동 공지사항 ></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-panel">
+                <a href="" class="main-panel-title">구성동 공지사항</a>
+                <div class="main-paragraph">
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">구성동 주민자치위원 모집 공고</p>
+                                <p class="message-content">「용인시 주민자치센터 설치 및 운영조례」제17조에 의하여 구성동 주민자치위원을 다음과 같이 공모합니다.</p>
+                            </div>
+                            <div class="details">
+                                <span class="detail">구성동 주민센터</span>
+                                <span class="detail">2021.06.29.</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">장애인 응급안전 안심서비스사업 대상자 모집</p>
+                                <p class="message-content">활동지원서비스를 이용하고 있는 수급자 중 서비스 지원이 필요한 대상자께서는 신청하여주시기 바랍니다.</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">장애인복지과</span>
+                                <span class="detail">2021.06.17.</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">휴관 안내</p>
+                                <p class="message-content">코로나 19 2.5단계 격상에 따른 지역사회 감염 예방 및 확산방지를 위한
+                                    사회적 거리두기 일환으로 센터 휴관을 안내 합니다.</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">구성동 주민센터</span>
+                                <span class="detail">2021.06.14</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">한산이씨 음애공파 고택 시가 있는 역사 콘서트 안내</p>
+                                <p class="message-content">가. 프로그램명 : 시가 있는 역사콘서트  나. 일 시 : 2021. 6. 26.(토) 오후 6시~20시</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">문화예술과</span>
+                                <span class="detail">2021.06.10.</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">제 59 기 2021년 3분기 (7월 ~ 9월) 프로그램 모집 안내</p>
+                                <p class="message-content">제 52기 프로그램을 모집 공고 합니다. 자세한 내용은 첨부된 문서를 참고하시기 바랍니다.</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">구성동 주민센터</span>
+                                <span class="detail">2021.06.09.</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">경기지역화폐 모바일 간편 결제 서비스 Q&A</p>
+                                <p class="message-content">6월 1일(화)부터 시행된 경기지역화폐 모바일 간편 결제 서비스에 관한 Q&A를 게시하오니 많은 이용 바랍니다.</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">일자리정책과</span>
+                                <span class="detail">2021.06.02.</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">2021년 도시재생대학 『온라인 도시재생 기본과정』홍보</p>
+                                <p class="message-content">< 2021년 도시재생대학 온라인 기본과정 소개 > [온라인 도시재생 기본과정(10차시, 총3시간)]</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">도시재생과</span>
+                                <span class="detail">2021.05.28.</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="notice-article">
+                        <a href="" class="message-button">
+                            <div>
+                                <p class="message">요가외3과목 강사모집 공고</p>
+                                <p class="message-content">구성동 주민자치센터의 프로그램을 함께 이끌어 갈 강사를 아래와 같이 모집 공고합니다.</p>
+                            </div>
+                            <div  class="details">
+                                <span class="detail">구성동 주민센터</span>
+                                <span class="detail">2021.05.21.</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="home.js"></script>
+</body>
+</html>

@@ -1,10 +1,13 @@
 var view_chat = () => {
     const chat_panel = document.getElementById("chat-panel");
+    const chat_button = document.getElementById("chat-button");
     if(chat_panel.style.display === "none"){
         chat_panel.style.display = "block";
+        chat_button.style.borderBottom = "4px solid #df7000";
     }
     else{
         chat_panel.style.display = "none";
+        chat_button.style.borderBottom = "none";
     }
 }
 
@@ -24,7 +27,3 @@ var close_login = () => {
     login_background_panel.style.display = "none";
 }
 
-var view_community = () => {
-    const login_panel = document.getElementById("login-panel");
-
-}
