@@ -121,7 +121,8 @@ a:hover {
 .icons {
   display: flex;
   width: 300px;
-  align-items: center;
+  height: 14px;
+  align-items: flex-end;
   /* margin: 7px 0; */
 }
 .icons img {
@@ -228,6 +229,7 @@ h6 {
 .title {
   font-size: 1.4rem;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 .left .detail {
   display: flex;
@@ -237,15 +239,16 @@ h6 {
   font-size: 1.2rem;
   margin-left: 12px;
   margin-top: 3px;
+  margin-bottom: 5px;
 }
 .left .detail .icons img {
-  margin-left: 13px;
+  margin-left: 12px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .left .detail .icons p {
-  margin: 5px;
-  bottom: 0.5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
 }
 .content .detail {
   display: flex;
