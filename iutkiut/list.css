@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0px;
+  font-family: "S-CoreDream-3Light";
+}
+.main {
+  padding-top: 90px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fafbfc;
+}
+#container {
+  display: flex;
+  width: 1000px;
+  padding: 50px 50px;
+  justify-content: space-around;
+  font-family: "S-CoreDream-3Light";
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 10px;
+  background-color: white;
+  color: #5b5656;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0px 1px #ececec;
+}
+.top button {
+  padding: 5px 10px;
+  margin-left: 250px;
+  background-color: #df7000;
+  border: 1px;
+  border-radius: 4px;
+  color: white;
+  font-family: "S-CoreDream-3Light";
+  box-shadow: 1px 1px 1px #ececec;
+}
+.left .category {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px#ececec;
+}
+.content .category {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0px 1px#ececec;
+}
+.content .category h5 {
+  margin-left: 240px;
+}
+.messages {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+article {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 1px#ececec;
+}
+a {
+  text-decoration: none;
+  color: #5b5656;
+}
+a:hover {
+  color: #df7000;
+}
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.wrap {
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #dddddd;
+}
+.left {
+  display: flex;
+  width: 300px;
+  /* margin: 10px 10px; */
+  background-color: white;
+  align-items: center;
+  flex-direction: column;
+}
+h5 {
+  font-size: 1.6rem;
+  color: #444444;
+}
+h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.hot_posts {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 1rem;
+}
+.hot_posts li {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0px 1px#ececec;
+}
+.post {
+  width: 90%;
+}
+.title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.left .detail {
+  display: flex;
+  flex-direction: column;
+}
+.left .detail p {
+  font-size: 1.2rem;
+  margin-left: 12px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.left .detail .icons img {
+  margin-left: 12px;
+  display: flex;
+  align-items: flex-end;
+}
+.left .detail .icons p {
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+.message .detail {
+  display: flex;
+  flex-direction: column;
+}
+.message img {
+  width: 70px;
+  height: 70px;
+}
+.content a {
+  width: 100%;
+}
+.content .icons .nickname {
+  margin-right: 12px;
+  color: #df7000;
+  font-weight: bold;
+}
+.content p {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.content .icons img {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+.content .icons p {
+  margin-bottom: 0px;
+  margin-right: 12px;
+}
+.icons {
+  display: flex;
+  width: 300px;
+  height: 14px;
+  align-items: flex-end;
+  /* margin: 7px 0; */
+}
+.icons img {
+  width: 13px;
+  height: 13px;
+  object-fit: cover;
+}
+#write-post {
+  display: none;
+  /* display: block; */
+  font-size: 1.2rem;
+  padding: 20px 0 10px 20px;
+  box-shadow: 0px 1px#ececec;
+  background-color: #f0f0f0;
+}
+#write-post input,
+textarea {
+  font-family: "S-CoreDream-3Light";
+  width: 85%;
+  margin-right: 46px;
+  /* border: 0px; */
+  margin: 5px 0;
+  border: 1px solid rgb(151, 149, 149);
+  background-color: #f0f0f0;
+  resize: none;
+}
+button {
+  padding: 5px 10px;
+  /* margin-right: 5px; */
+  background-color: #df7000;
+  border: 1px;
+  border-radius: 4px;
+  color: white;
+  font-family: "S-CoreDream-3Light";
+  box-shadow: 1px 1px 1px #ececec;
+}
+#post-btn {
+  position: relative;
+  bottom: 16px;
+  left: 15px;
+}
+#post-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+}
+#post-box h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #df7000;
+}
+#post-box input {
+  width: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+}

@@ -224,7 +224,7 @@ body {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #444444;
 }
@@ -474,7 +474,7 @@ body {
   color: #df7000;
 }
 
-.message{
+.message-title{
   line-height: 35px;
   font-size: 1.4rem;
   font-weight: bold;
@@ -485,7 +485,7 @@ body {
   font-size: 1.2rem;
 }
 
-.detail{
+.message-detail{
   line-height: 60px;
   padding-right: 50px;
 }
