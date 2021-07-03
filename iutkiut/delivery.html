@@ -28,18 +28,18 @@
 <!-- Header!!!! -->
 <div id="header">
   <nav class="nav-bar">
-      <a href="" class="logo-area">
-          <img src="https://github.com/MasterProgrammer-Korea/Web-project/blob/main/iutkiut/data/logo.png?raw=true" class="logo" alt="logo">
+      <a href="iutkiut.html" class="logo-area">
+          <img src="data/logo.png" class="logo" alt="logo">
       </a>
       <ul class="center-menu">
-          <a href="" class="cur-page-link">메인</a>
+          <a href="iutkiut.html" class="nav-link">메인</a>
           <div class="gnb-panel">
               <div class="gnb-grids">
                   <div class="gnb-grid">
-                      <a href="" class="gnb-title">커뮤니티</a>
+                      <a href="list.html" class="gnb-title">커뮤니티</a>
                       <ul class="gnb-list">
                           <li class="gnb-item">
-                              <a href="" class="gnb-link">아파트 커뮤니티</a>
+                              <a href="list.html" class="gnb-link">아파트 커뮤니티</a>
                           </li>
                           <li class="gnb-item">
                               <a href="" class="gnb-link">단지 커뮤니티</a>
@@ -72,7 +72,7 @@
                       </ul>
                   </div>
                   <div class="gnb-grid">
-                      <a href="" class="gnb-title">배달</a>
+                      <a href="orderr.html" class="gnb-title">배달</a>
                       <ul class="gnb-list">
                           <li class="gnb-item">
                               <a href="" class="gnb-top-link">주문하기</a>
@@ -100,7 +100,7 @@
                               <a href="" class="gnb-link">배달 희망 등록</a>
                           </li>
                           <li class="gnb-item">
-                              <a href="" class="gnb-link">주문 목록</a>
+                              <a href="" class="gnb-link">배달 요청 목록</a>
                           </li>
                       </ul>
                   </div>
@@ -108,7 +108,7 @@
                       <a href="" class="gnb-title">공지사항</a>
                       <ul class="gnb-list">
                           <li class="gnb-item">
-                              <a href="" class="gnb-top-link">아파트 공지사항</a>
+                              <a href="" class="gnb-link">아파트 공지사항</a>
                           </li>
                           <li class="gnb-item">
                               <a href="" class="gnb-link">단지 공지사항</a>
@@ -123,15 +123,65 @@
                   </div>
               </div>
           </div>
-          <a href="" class="nav-link">커뮤니티</a>
-          <a href="" class="nav-link">배달</a>
-          <a href="" class="nav-link">공지사항</a>
+          <a href="list.html" class="nav-link">커뮤니티</a>
+          <a href="orderr.html" class="cur-page-link">배달</a>
+          <a href="notice.html" class="nav-link">공지사항</a>
       </ul>
       <ul class="account-menu">
-          <a href="" class="nav-link">채팅</a>
-          <a href="" class="nav-link">로그인</a>
+          <span id="chat-button" class="nav-link" onclick="view_chat()">채팅</span>
+          <span class="nav-link" onclick="view_login()">로그인</span>
       </ul>
   </nav>
+</div>
+<div id="login-background-panel"></div>
+<div id="login-panel" >
+  <div class="login-container">
+      <div class="login-close" onclick="close_login()">
+          <p>x</p>
+      </div>
+      <div class="login-title">
+          <p>로그인</p>
+      </div>
+      <div>
+          <p class="login-info">아이디 ></p>
+          <input type="text" class="login-info-inputbox">
+          <p class="login-info">비밀번호 ></p>
+          <input type="password" class="login-info-inputbox">
+      </div>
+      <p><button type="submit" class="login-button">로그인</button></p>
+  </div>
+</div>
+<div id="chat-panel" class="chat-panel">
+  <div class="chat-room">
+      <div class="chat-top">
+          <p class="chat-back"><</p>
+          <p class="chat-title">초코언니</p>
+          <p class="chat-menu">≡</p>
+      </div>
+      <div class="chat-content">
+          <div class="chat">
+              <div class="right-chat-box">
+                  <div class="right-chat">
+                      <p class="right-message">초코 너무 귀여워요ㅠㅠ</p>
+                  </div>
+              </div>
+              <div class="left-chat-box">
+                  <div class="left-chat">
+                      <p class="chat-message">감사합니다 ^__^</p>
+                  </div>
+              </div>
+              <div class="right-chat-box">
+                  <div class="right-chat">
+                      <p class="right-message">산책할 때 불러주세요!</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="chat-box">
+          <textarea name="chat-input" class="chat-input"></textarea>
+          <span><button class="chat-button">전송</button></span>                    
+      </div>
+  </div>
 </div><br>
 
 <!-- start!! -->
@@ -232,5 +282,6 @@
           </div>
         </div>
       </div>
+      <script type="text/javascript" src="home.js"></script>
 </body>
 </html>

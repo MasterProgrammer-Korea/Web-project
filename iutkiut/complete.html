@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="iutkiut.css">
+    <link rel="stylesheet" href="complete.css">
+    <title>주문 완료 화면</title>
+    <style>
+      .btn {
+        background-color: #faf5edb2;
+        padding: 15px 30px;
+        margin: 10px;
+        border: 2px solid rgb(173, 171, 171);
+        color: #444343;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        border-radius: 10px;
+        justify-items: center;
+      }
+      .btn2:hover { box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 3px 8px 0 rgba(0,0,0,0.19); }
+    </style>
+    <style>
+      .btn3 {
+        background-color: #f7f0e47a;
+        padding: 15px;
+        margin: 10px;
+        border: 1px solid rgba(214, 214, 214, 0.664);
+        color: #444343;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4rem;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        border-radius: 10px;
+      }
+      .btn1:hover { box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2), 0 2px 7px 0 rgba(0,0,0,0.19); }
+    </style>
+  </head>
+
+    <!-- Header!!!! -->
+    <div id="header">
+        <nav class="nav-bar">
+            <a href="iutkiut.html" class="logo-area">
+                <img src="data/logo.png" class="logo" alt="logo">
+            </a>
+            <ul class="center-menu">
+                <a href="iutkiut.html" class="nav-link">메인</a>
+                <div class="gnb-panel">
+                    <div class="gnb-grids">
+                        <div class="gnb-grid">
+                            <a href="list.html" class="gnb-title">커뮤니티</a>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="list.html" class="gnb-link">아파트 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">단지 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">마을 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">동/면/리 커뮤니티</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid gnb-border-right">  
+                            <ul class="gnb-list">
+                                <p class="gnb-empty-title">
+                                    _
+                                </p>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">동아리 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">대여 커뮤니티</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">같이 할 사람</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-top-link">더 보기</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid">
+                            <a href="orderr.html" class="gnb-title">배달</a>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-top-link">주문하기</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">음식 포장</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">편의점 / 약</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">심부름 / 기타</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid gnb-border-right">
+                            <p class="gnb-empty-title">
+                                _
+                            </p>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-top-link">배달하기</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">배달 희망 등록</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">배달 요청 목록</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="gnb-grid">
+                            <a href="" class="gnb-title">공지사항</a>
+                            <ul class="gnb-list">
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">아파트 공지사항</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">단지 공지사항</a>
+                                </il>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">마을 공지사항</a>
+                                </li>
+                                <li class="gnb-item">
+                                    <a href="" class="gnb-link">동/면/리 공지사항</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="list.html" class="nav-link">커뮤니티</a>
+                <a href="orderr.html" class="cur-page-link">배달</a>
+                <a href="notice.html" class="nav-link">공지사항</a>
+            </ul>
+            <ul class="account-menu">
+                <span id="chat-button" class="nav-link" onclick="view_chat()">채팅</span>
+                <span class="nav-link" onclick="view_login()">로그인</span>
+            </ul>
+        </nav>
+    </div>
+    <div id="login-background-panel"></div>
+    <div id="login-panel" >
+        <div class="login-container">
+            <div class="login-close" onclick="close_login()">
+                <p>x</p>
+            </div>
+            <div class="login-title">
+                <p>로그인</p>
+            </div>
+            <div>
+                <p class="login-info">아이디 ></p>
+                <input type="text" class="login-info-inputbox">
+                <p class="login-info">비밀번호 ></p>
+                <input type="password" class="login-info-inputbox">
+            </div>
+            <p><button type="submit" class="login-button">로그인</button></p>
+        </div>
+    </div>
+    <div id="chat-panel" class="chat-panel">
+        <div class="chat-room">
+            <div class="chat-top">
+                <p class="chat-back"><</p>
+                <p class="chat-title">초코언니</p>
+                <p class="chat-menu">≡</p>
+            </div>
+            <div class="chat-content">
+                <div class="chat">
+                    <div class="right-chat-box">
+                        <div class="right-chat">
+                            <p class="right-message">초코 너무 귀여워요ㅠㅠ</p>
+                        </div>
+                    </div>
+                    <div class="left-chat-box">
+                        <div class="left-chat">
+                            <p class="chat-message">감사합니다 ^__^</p>
+                        </div>
+                    </div>
+                    <div class="right-chat-box">
+                        <div class="right-chat">
+                            <p class="right-message">산책할 때 불러주세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-box">
+                <textarea name="chat-input" class="chat-input"></textarea>
+                <span><button class="chat-button">전송</button></span>                    
+            </div>
+        </div>
+    </div><br>
+
+<!--시작-->
+    <div class="main">
+    <div class="container">
+      <div class="wrap">
+        <div class="do_order">
+          <h1>주문이 완료되었습니다!</h1><br>
+        </div><br>
+
+  <!--주문 정보 확인-->
+      <div class="check">
+        <div class="box">
+        <h3>주문 내역</h3><br>
+          <p>주문 일시: 2021.06.25 14:21:30</p><br>
+          <p>주문 내역: OO마트에서 진라면 순한맛 한 봉지(5개), 토레타 1.25L 하나 사다 주세요.</p><br>
+          <p>예상 소요 시간: 약 25분</p><br>
+          <span><a href="#" class="stretched-link">자세히 보기</a></span><br>
+        </div>
+      </div><br>
+
+      <div class="delivery">
+        <div class="box">
+        <h3>이웃 기사 정보</h3><br>
+          <p>주문 접수 시간: 2021.06.25 14:22:30</p><br>
+          <p>기사님 이름:누구게</p><br>
+          <p>예상 소요 시간: 약 25분</p><br>
+          <span><a href="#" class="stretched-link">기사님께 전화 걸기</a></span><br>
+          <br><br><span><a href="#" class="stretched-link">자세히 보기</a></span><br>
+        </div>
+      </div><br><br><hr><br>
+
+ <!--여기부터 주문 했던 내역-->
+      <div class="history">
+      <strong>이전 주문 내역</strong>
+      </div>
+
+        <div class="cards">
+          <div class="card shadow-sm">
+            <img src="https://mblogthumb-phinf.pstatic.net/20160426_55/ppanppane_14616500115941uytb_PNG/%C6%C4%B8%AE%B9%D9%B0%D4%C6%AE_%B7%CE%B0%ED_%282%29.png?type=w800" width="200" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: 파리바게뜨에서 '연유 바게뜨' 하나랑 단팥빵 하나 사다 주세요.</p>
+                <small class="time">14시간 전</small><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
+          
+          <div class="card shadow-sm">
+            <img src="https://blog.kakaocdn.net/dn/bJsBCT/btqwTxzklpN/nf9zv5kxH99VyHK47rqeVK/img.jpg" width="200" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: KFC에서 징거버거 세트 하나랑 징거버거 단품 하나 사다 주세요.</p>
+                <small class="time">2일 전</small><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/CU_BI_%282017%29.svg/1200px-CU_BI_%282017%29.svg.png" width="180" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: CU에서 새우탕 컵라면 하나랑 물 500ml 하나 사다 주세요.</p>
+                <small class="time">3일 전</small><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <img src="https://blog.kakaocdn.net/dn/opebh/btqyPUMee3Q/S2Jsary7W5KXHq6CVTeRcK/img.jpg" width="200" height="150">
+            <div class="card-body">
+              <p class="card-text">주문 내역: 스타벅스에서 아이스 아메리카노 톨 사이즈 한 잔 사다 주세요.</p>
+                <small class="time">5일 전</small><br>
+                <a href="#" class="btn3 btn1">주문 상세 내역 보기</a>
+            </div>
+          </div>
+
+          <div class="back">
+            <a href="#" class=stretched-link>Back to top</a>
+          </div>
+
+        </div>
+        </div>
+</div>
+</div>
+<script type="text/javascript" src="home.js"></script>
+</body>
+</html>
