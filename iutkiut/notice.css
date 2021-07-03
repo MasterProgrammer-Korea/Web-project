@@ -181,7 +181,7 @@
   }
   
   .chat-panel{
-      display: block;
+      display: none;
       position: fixed;
       right: 20px; 
       top: 140px;
