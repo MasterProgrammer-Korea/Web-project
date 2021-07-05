@@ -13,5 +13,7 @@
 - 윤현지 : 배달 페이지 제작
 
 ## 🎨 Concept
-<img src="https://user-images.githubusercontent.com/69155170/123157084-13188b00-d4a5-11eb-96e8-cb6ac8a5cbff.png" width="600" height="500">
+<img src="https://user-images.githubusercontent.com/69155170/123157084-13188b00-d4a5-11eb-96e8-cb6ac8a5cbff.png" width="500" height="400">
 
+## 📹 Video
+https://youtu.be/yunkPoWwS0g
